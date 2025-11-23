@@ -1,0 +1,19 @@
+<ul>
+  <li *ngFor="let id of [1,2,3,4,5]">
+    <a [routerLink]="['/etapa4/details', id]">
+      Ir a detalles del Id: #{{id}}
+    </a>
+  </li>
+</ul>
+
+
+
+<div class="container">
+    <h1>Página de detalles</h1>
+    <p>Mostrando los detalles para el ID: #{{id}}</p>
+</div>
+<div class="container">
+    <h2>Ejemplo de uso de este container</h2>
+    <p>Aquí puedes usar el ID: {{id}} como parametro en una sentencia
+        SQL y traer los datos de cada registro en una vista individual para cada uno.</p>
+</div>

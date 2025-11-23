@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Directiva ngIf/Else</h1>
+    <img src="https://picsum.photos/id/237/1760/1200" alt="">
+    <ng-template #aviso>
+        <input type="button" value="Mas Información" class="info" (click)="MostrarInfo = true">
+    </ng-template>
+    <div class="card" *ngIf="MostrarInfo; else aviso">
+        <h1>Mascotas <input type="button" value="X" class="cerrar" (click)="MostrarInfo = false"></h1>
+        <p>Las mascotas son compañeros fieles que alegran nuestro día.  
+            Perros y gatos son los más comunes en los hogares.  
+            Cuidarlos implica responsabilidad y compromiso.  
+            Su presencia reduce el estrés y la ansiedad.  
+            Cada especie tiene necesidades particulares.  
+            Jugar con ellos fortalece el vínculo afectivo.  
+            Adoptar es una forma noble de darles hogar.   
+            Son parte de la familia y merecen respeto.  </p>
+    </div>
+</div>

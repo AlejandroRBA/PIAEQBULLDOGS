@@ -1,0 +1,22 @@
+<header class="menuE3">
+  <nav>
+    <button (click)="setView('Validaciones')">Validaciones</button>
+    <button (click)="setView('Input')">Input</button>
+    <button (click)="setView('Output')">Output</button>
+  </nav>
+</header>
+
+@switch (activeView) {
+  @case ('Validaciones') {
+    <app-validaciones-component></app-validaciones-component>
+  }
+  @case ('Input') {
+    <app-padre-component1></app-padre-component1>
+  }
+  @case ('Output') {
+    <app-padre-component2></app-padre-component2>
+  }
+  @default {
+    <app-validaciones-component></app-validaciones-component>
+  }
+}

@@ -1,0 +1,46 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+
+button{
+    margin-right: 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Clase1{
+    color:red
+}
+
+.Clase2{
+    color:green
+}
+
+.Clase3{
+    color:blue
+}
+
+.deshabilitado{
+    pointer-events: none;
+    color: gray;
+}
+
+.grande{
+    font-size: large;
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.seleccionado{
+    border: solid green
+}

@@ -1,0 +1,28 @@
+<header class="menu">
+  <nav>
+    <ul>
+      <li (click)="componente=1">Ejemplo Manual</li>
+      <li (click)="componente=2">Ejemplo CLI</li>
+      <li (click)="componente=3">Interpolación objetos</li>
+      <li (click)="componente=4">Event-Binding</li>
+      <li (click)="componente=5">Class-Binding</li>
+      <li (click)="componente=6">Property-Binding</li>
+      <li (click)="componente=7">Variables-plantilla</li>
+      <li (click)="componente=8">Directiva-ngIf/Else</li>
+      <li (click)="componente=9">Directiva ngFor</li>
+    </ul>
+  </nav>
+</header>
+
+<div [ngSwitch]="componente">
+  <div *ngSwitchCase="1"><app-ejemplo-manual></app-ejemplo-manual></div>
+  <div *ngSwitchCase="2"><app-ejemplo-clicomponent></app-ejemplo-clicomponent></div>
+  <div *ngSwitchCase="3"><app-componente1-component></app-componente1-component></div>
+  <div *ngSwitchCase="4"><app-contador></app-contador></div>
+  <div *ngSwitchCase="5"><app-enlace-clase></app-enlace-clase></div>
+  <div *ngSwitchCase="6"><app-enlace-propiedades></app-enlace-propiedades></div>
+  <div *ngSwitchCase="7"><app-variables-plantilla></app-variables-plantilla></div>
+  <div *ngSwitchCase="8"><app-directiva-ng-if></app-directiva-ng-if></div>
+  <div *ngSwitchCase="9"><app-directiva-ng-for></app-directiva-ng-for></div>
+  <div *ngSwitchDefault><app-ejemplo-manual></app-ejemplo-manual></div>
+</div>

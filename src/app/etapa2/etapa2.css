@@ -1,0 +1,35 @@
+*{
+    margin-top: 20px;
+    color: white;
+}
+
+.menu {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #9e9e9e4b;
+    font-family: Roboto, sans-serif;
+    width: 786px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    margin-right: 5px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-right: 2px dotted black;
+}
+
+nav li:hover {
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+}

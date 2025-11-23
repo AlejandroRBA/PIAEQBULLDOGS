@@ -1,0 +1,28 @@
+<header>
+  <nav class="navbar">
+    <button (click)="setView('Home')">Inicio</button>
+    <button (click)="setView('Etapa2')">Etapa 2</button>
+    <button (click)="setView('Etapa3')">Etapa 3</button>
+    <button routerLink="/etapa4" (click)="setView('Etapa4')">Etapa 4</button>
+  </nav>
+</header>
+
+
+@switch (activeView) {
+  @case ('Home') {
+    <app-home></app-home>
+  }
+  @case ('Etapa2') {
+    <app-etapa2></app-etapa2>
+  }
+  @case ('Etapa3') {
+    <app-etapa3></app-etapa3>
+  }
+    @case ('Etapa4') {
+    <app-etapa4></app-etapa4>
+  }
+  @default {
+    <app-home></app-home>
+  }
+}
+

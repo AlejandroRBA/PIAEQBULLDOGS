@@ -1,0 +1,34 @@
+.menuE4 {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #252526;
+    font-family: Roboto, sans-serif;
+    width: 40%;
+    height: 5%;
+    margin: 30px auto 0 auto;
+    margin-bottom: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.menuE4 nav{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.menuE4 nav button{
+    flex: 1;
+    border: none;
+    height: 100%;
+    text-align: center;
+    background-color: #252526;
+    color:white;
+}
+
+.menuE4 nav button:hover{
+    background-color: #1e1e1e;
+}
+
+
